@@ -37,6 +37,8 @@ for example
 script_path=os.path.dirname(os.path.realpath(sys.argv[0]))
 config_path=os.path.join(script_path, 'config/yolov3-spp.cfg')
 
+10. time elapse logging between main functions, only need to log at some frequency, e.g. 1 out of 1000
+
 Reference:
 http://tempvariable.blogspot.com/2009/07/how-to-add-program-to-run-at-startup-in.html
 
