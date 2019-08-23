@@ -9,6 +9,10 @@ Some rules to follow when doing software deployment:
 6. program run as service in the background, no console output, output all log to syslog
 7. Running background program for ~2 weeks, see if any crashes related to time of using
 8. Logging need to set max log size, use RotatingFileHandler
+9. Use relative path for config files, 
+for example
+script_path=os.path.dirname(os.path.realpath(sys.argv[0]))
+config_path=os.path.join(script_path, 'config/yolov3-spp.cfg')
 
 Reference:
 http://tempvariable.blogspot.com/2009/07/how-to-add-program-to-run-at-startup-in.html
