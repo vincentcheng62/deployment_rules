@@ -39,6 +39,16 @@ config_path=os.path.join(script_path, 'config/yolov3-spp.cfg')
 
 10. time elapse logging between main functions, only need to log at some frequency, e.g. 1 out of 1000
 
+11. convert python scripts into standalone executable files in ubuntu
+
+You can install the module using -
+
+sudo pip install PyInstaller
+After installing, go into the folder where the script you want to convert into standalone executable is present. Now, type the following commands -
+
+pyinstaller --onefile <script_name>
+The corresponding standalone executable (ELF format) will be present in the path /dist/ w.r.t. the current directory with the same name as the name of original script.
+
 Reference:
 http://tempvariable.blogspot.com/2009/07/how-to-add-program-to-run-at-startup-in.html
 
