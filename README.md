@@ -52,3 +52,32 @@ The corresponding standalone executable (ELF format) will be present in the path
 Reference:
 http://tempvariable.blogspot.com/2009/07/how-to-add-program-to-run-at-startup-in.html
 
+
+
+# development process
+1.	Low Level Design, should deliver design document, which should include but not limited to
+    a.	Algorithms description(e.g. open source to use, methodology)
+    b.	Algorithm flow
+    c.	Key data structure description (UML diagram/Database relational diagram?)
+    d.	Key function (header of the API)
+    e.	Interface with other module
+    f.	Assumption made in the algorithm
+    g.	Input output of the module
+    h.	Test plan
+    i.	Specification(e.g. accuracy/speed of algorithm) / collect requirement from users
+    j.	Running environment (e.g. windows/linux, thread safe or not, x86 or x64, hardwares…)
+    k.	System architecture 
+    l.	Risk of each R&D parts (possible failure)
+2.	Design review
+3.	Feasibility study
+4.	Write schedule list and decide deliverable in each stage, decide person in charge for each submodule
+5.	Implementation and write unit test, write test program for simulation test/ real image test, etc…
+6.	Write user manual, engineer manual
+7.	Optional code review
+8.	Testing, should write test-cases first and deliver test report.
+9.	Check-in to gitlab and finish CI (Continuous integration)
+10.	Write UI and installation package/script for the tool
+11.	Optional code encryption (for privacy concern)
+
+
+
